@@ -110,9 +110,9 @@
             transition: transform 0.3s ease;
         }
 
-        /* Popup štýl */
+            /* Popup štýl */
         .popup {
-            display: none;
+            display: none; /* Inicialne skrytý */
             position: fixed;
             top: 50%;
             left: 50%;
@@ -124,16 +124,48 @@
             padding: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
             z-index: 9999;
-            transition: all 0.5s ease-in-out;
+            opacity: 0;
+            animation: fadeInPopup 0.5s forwards;
         }
 
-        .popup-slide {
-            display: none;
+        /* Animácie */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
 
-        .popup-slide.active {
-            display: block;
+        @keyframes fadeOut {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
         }
+
+        @keyframes fadeInPopup {
+            0% {
+                opacity: 0;
+                transform: translate(-50%, -50%) scale(0.5);
+            }
+            100% {
+                opacity: 1;
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        /* Tieto triedy riadia animácie */
+        .popup-show {
+            display: block; /* Viditeľný */
+            animation: fadeInPopup 0.5s forwards;
+        }
+
+        .popup-hide {
+            animation: fadeOut 0.5s 
 
         .popup-title {
             font-size: 28px;
