@@ -112,7 +112,7 @@
 
         /* Popup štýl */
         .popup {
-            display: none; /* Inicialne skrytý */
+            display: none;
             position: fixed;
             top: 50%;
             left: 50%;
@@ -127,33 +127,12 @@
             transition: all 0.5s ease-in-out;
         }
 
-        /* Animácie */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-            100% {
-                opacity: 1;
-            }
+        .popup-slide {
+            display: none;
         }
 
-        @keyframes fadeOut {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-        /* Tieto triedy riadia animácie */
-        .popup-show {
-            display: block; /* Viditeľný */
-            animation: fadeIn 0.5s forwards;
-        }
-
-        .popup-hide {
-            animation: fadeOut 0.5s forwards;
+        .popup-slide.active {
+            display: block;
         }
 
         .popup-title {
@@ -234,19 +213,21 @@
             box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
             transition: transform 0.3s;
         }
+
     </style>
 </head>
 <body>
     <h1>Gemerské poklady na tanieri</h1>
-    <h2>SOČ práca Martina Baloga, Miriam Benkovej</h2>
+    <h2>SOČ práca Martina Baloga, Miriam Benkovej</h2> <!-- Pridaný podnadpis -->
 
     <div class="map-container" id="map">
         <div class="location" data-name="Rožňava" data-slides='["Rožňava je mesto bohaté na históriu.", "Rožňava ponúka krásne historické pamiatky."]' style="top: 20%; left: 50%;"></div>
-        <div class="location" data-name="Revúca" data-slides='["Revúca je malebné mestečko obklopené prírodou.", "Revúca je známa svojimi tradíciami."]' style="top: 30%; left: 30%;"></div>
+        <div class="location" data-name="Revúca" data-slides='["Revúca je známa svojou prírodou.", "Revúca ponúka turistické chodníky."]' style="top: 30%; left: 50%;"></div>
         <div class="location" data-name="Gemerská Poloma" data-slides='["Gemerská Poloma je pokojné miesto na oddych.", "Gemerská Poloma je obklopená prírodou."]' style="top: 40%; left: 20%;"></div>
         <div class="location" data-name="Plešivec" data-slides='["Plešivec je dedinka s krásnymi výhľadmi.", "Plešivec je ideálny pre oddych."]' style="top: 50%; left: 40%;"></div>
     </div>
 
+    <!-- Tlačidlá pre zoom -->
     <div class="zoom-buttons">
         <button class="zoom-button" id="zoom-in">+</button>
         <button class="zoom-button" id="zoom-out">-</button>
@@ -297,8 +278,7 @@
                 document.getElementById('slide-2').innerHTML = `<h3 class="popup-title">${locationName}</h3><p>${slideInfo[1]}</p>`;
                 
                 currentSlide = 0;
-                popup.classList.remove('popup-hide');
-                popup.classList.add('popup-show');
+                popup.style.display = 'block';
                 updateSlides();
             });
         });
@@ -311,9 +291,7 @@
         });
 
         closePopupButton.addEventListener('click', () => {
-            popup.classList.remove('popup-show');
-            popup.classList.add('popup-hide');
-            setTimeout(() => popup.style.display = 'none', 500); // Po animácii skryjeme popup
+            popup.style.display = 'none';
         });
 
         function updateSlides() {
@@ -332,6 +310,7 @@
             });
         });
 
+        // Funkcia na priblíženie a oddialenie mapy
         zoomInButton.addEventListener('click', () => {
             zoomLevel += 0.1;
             map.style.transform = `scale(${zoomLevel})`;
