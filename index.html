@@ -110,9 +110,9 @@
             transition: transform 0.3s ease;
         }
 
-            /* Popup štýl */
+        /* Popup štýl */
         .popup {
-            display: none; /* Inicialne skrytý */
+            display: none;
             position: fixed;
             top: 50%;
             left: 50%;
@@ -124,11 +124,17 @@
             padding: 30px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
             z-index: 9999;
-            opacity: 0;
-            animation: fadeInPopup 0.5s forwards;
+            transition: all 0.5s ease-in-out;
         }
 
-        /* Animácie */
+        .popup-show {
+            animation: fadeIn 0.5s forwards;
+        }
+
+        .popup-hide {
+            animation: fadeOut 0.5s forwards;
+        }
+
         @keyframes fadeIn {
             0% {
                 opacity: 0;
@@ -147,25 +153,13 @@
             }
         }
 
-        @keyframes fadeInPopup {
-            0% {
-                opacity: 0;
-                transform: translate(-50%, -50%) scale(0.5);
-            }
-            100% {
-                opacity: 1;
-                transform: translate(-50%, -50%) scale(1);
-            }
+        .popup-slide {
+            display: none;
         }
 
-        /* Tieto triedy riadia animácie */
-        .popup-show {
-            display: block; /* Viditeľný */
-            animation: fadeInPopup 0.5s forwards;
+        .popup-slide.active {
+            display: block;
         }
-
-        .popup-hide {
-            animation: fadeOut 0.5s 
 
         .popup-title {
             font-size: 28px;
@@ -250,7 +244,7 @@
 </head>
 <body>
     <h1>Gemerské poklady na tanieri</h1>
-    <h2>SOČ práca Martina Baloga, Miriam Benkovej</h2> <!-- Pridaný podnadpis -->
+    <h2>SOČ práca Martina Baloga, Miriam Benkovej</h2>
 
     <div class="map-container" id="map">
         <div class="location" data-name="Rožňava" data-slides='["Rožňava je mesto bohaté na históriu.", "Rožňava ponúka krásne historické pamiatky."]' style="top: 20%; left: 50%;"></div>
@@ -259,7 +253,6 @@
         <div class="location" data-name="Plešivec" data-slides='["Plešivec je dedinka s krásnymi výhľadmi.", "Plešivec je ideálny pre oddych."]' style="top: 50%; left: 40%;"></div>
     </div>
 
-    <!-- Tlačidlá pre zoom -->
     <div class="zoom-buttons">
         <button class="zoom-button" id="zoom-in">+</button>
         <button class="zoom-button" id="zoom-out">-</button>
@@ -310,7 +303,7 @@
                 document.getElementById('slide-2').innerHTML = `<h3 class="popup-title">${locationName}</h3><p>${slideInfo[1]}</p>`;
                 
                 currentSlide = 0;
-                popup.style.display = 'block';
+                popup.classList.add('popup-show');
                 updateSlides();
             });
         });
@@ -323,7 +316,9 @@
         });
 
         closePopupButton.addEventListener('click', () => {
-            popup.style.display = 'none';
+            popup.classList.remove('popup-show');
+            popup.classList.add('popup-hide');
+            setTimeout(() => popup.style.display = 'none', 500); // Po animácii skryjeme popup
         });
 
         function updateSlides() {
@@ -342,7 +337,6 @@
             });
         });
 
-        // Funkcia na priblíženie a oddialenie mapy
         zoomInButton.addEventListener('click', () => {
             zoomLevel += 0.1;
             map.style.transform = `scale(${zoomLevel})`;
