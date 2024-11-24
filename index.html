@@ -126,7 +126,56 @@
             z-index: 9999;
             transition: all 1.5s ease-in-out;
         }
+/* Animácia pre zobrazenie popup okna */
+@keyframes popupEnter {
+    0% {
+        transform: translate(-50%, -50%) scale(0.8); /* Začiatok - malé a mimo obrazovku */
+        opacity: 0; /* Neviditeľné */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1); /* Konečná pozícia - normálna veľkosť */
+        opacity: 1; /* Plne viditeľné */
+    }
+}
 
+/* Animácia pre skrytie popup okna */
+@keyframes popupExit {
+    0% {
+        transform: translate(-50%, -50%) scale(1); /* Začiatok - normálna veľkosť */
+        opacity: 1; /* Plne viditeľné */
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(0.8); /* Konečná pozícia - malé a mimo obrazovku */
+        opacity: 0; /* Neviditeľné */
+    }
+}
+
+/* Popup okno s animáciou pri zobrazení */
+.popup {
+    display: none; /* Skryté, až kým nebude zobrazené */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+    z-index: 9999;
+    animation: popupEnter 0.5s forwards; /* Použitie animácie pri zobrazení */
+    transition: all 0.5s ease-in-out;
+}
+
+/* Tlačidlo pre zatvorenie popup okna */
+.popup-button-close {
+    background-color: #D32F2F;
+}
+
+.popup-button-close:hover {
+    background-color: #B71C1C;
+}
         .popup-slide {
             display: none;
         }
