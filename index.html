@@ -23,6 +23,66 @@
             position: relative;
         }
 
+        /* Texty v hornom okraji */
+        .top-links {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 14px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .top-links a {
+            color: #FFD700;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: color 0.3s;
+        }
+
+        .top-links a:hover {
+            color: #FFA500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Texty pre prihlásenie a registráciu -->
+    <div class="top-links">
+        <a href="login.html">Prihlásenie</a>
+        <a href="register.html">Registrácia</a>
+    </div>
+
+    <h1>Gemerské poklady na tanieri</h1>
+    <h2>SOČ práca Martina Baloga, Miriam Benkovej</h2>
+    
+    <!-- Zvyšok kódu zostáva nezmenený -->
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemerské poklady na tanieri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <style>
+        /* Celkový štýl stránky */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(45deg, #4A90E2, #81D4FA, #0288D1, #01579B);
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            font-family: 'Roboto', sans-serif;
+            overflow: hidden;
+            position: relative;
+        }
+
         h1 {
             font-family: 'Montserrat', sans-serif;
             font-size: 48px;
