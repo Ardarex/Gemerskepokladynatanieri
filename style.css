@@ -1020,4 +1020,169 @@ nav a{
 
 
 
+=====================================
+   FINAL MOBILE HEIGHT FIX
+===================================== */
+
+
+@media(max-width:900px){
+
+
+html,body{
+
+    width:100%;
+
+    overflow-x:hidden;
+
+}
+
+
+
+/* HERO FIX */
+
+.hero{
+
+    min-height:100svh;
+
+    height:auto;
+
+    padding-top:120px;
+
+    padding-bottom:80px;
+
+}
+
+
+
+
+.hero-content{
+
+    width:90%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:48px;
+
+    line-height:.95;
+
+    margin-bottom:20px;
+
+}
+
+
+
+
+.hero-text{
+
+    max-width:330px;
+
+    line-height:1.6;
+
+    margin:25px 0;
+
+}
+
+
+
+
+
+.hero-bg{
+
+    background-position:center;
+
+}
+
+
+
+
+
+
+
+/* NAVBAR FIX */
+
+
+.navbar{
+
+    padding:18px 5%;
+
+}
+
+
+
+.logo{
+
+    font-size:17px;
+
+}
+
+
+
+nav a{
+
+    font-size:10px;
+
+}
+
+
+
+
+
+/* SEKCIE */
+
+
+.articles,
+.feature,
+.join-section{
+
+    padding-top:70px;
+
+    padding-bottom:70px;
+
+}
+
+
+
+
+
+.section-head h2{
+
+    margin-bottom:40px;
+
+}
+
+
+
+
+
+
+
+/* JOIN TEXT */
+
+
+.join-box h2{
+
+    line-height:1;
+
+}
+
+
+
+
+
+.join-button{
+
+    white-space:normal;
+
+    text-align:center;
+
+}
+
+
+
+
+
 }
