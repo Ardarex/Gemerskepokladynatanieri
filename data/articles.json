@@ -6,5 +6,9 @@
     "image": "https://images.unsplash.com/photo-1523398002811-999ca8dec234",
     "short": "Ako ulica zmenila svet modernej módy.",
     "content": "Streetwear už dávno nie je iba oblečenie z ulíc. Dnes ovplyvňuje celý módny priemysel."
-  }
+  },
+  
+  
+  
+  { "id":2, "category":"STREET", "title":"Nová energia mestských ulíc", "image":"https://obrazok2.jpg", "short":"Ľudia, móda a kultúra v uliciach.", "content":"Toto je celý článok. Sem napíšeš všetok text, ktorý sa zobrazí po otvorení článku."}
 ]
