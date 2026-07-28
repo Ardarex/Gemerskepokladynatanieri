@@ -1181,8 +1181,158 @@ nav a{
 
 }
 
+/* ===========================
+   MOBILE RESOLUTION FIX
+=========================== */
 
+
+html, body{
+
+    width:100%;
+
+    max-width:100%;
+
+    overflow-x:hidden;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.navbar{
+
+    width:100%;
+
+    padding:20px 15px;
+
+}
+
+
+
+.logo{
+
+    font-size:18px;
+
+    white-space:nowrap;
+
+}
+
+
+
+nav{
+
+    gap:10px;
+
+    flex-wrap:nowrap;
+
+}
+
+
+
+nav a{
+
+    font-size:11px;
+
+    white-space:nowrap;
+
+}
+
+
+
+
+
+.hero{
+
+    width:100%;
+
+    min-height:100svh;
+
+}
+
+
+
+.hero-content{
+
+    width:90%;
+
+    max-width:100%;
+
+}
+
+
+
+.hero h1{
+
+    font-size:48px;
+
+}
+
+
+
+.hero-text{
+
+    max-width:100%;
+
+}
+
+
+
+
+
+.join-box{
+
+    width:100%;
+
+    max-width:100%;
+
+    overflow:hidden;
+
+}
+
+
+
+.join-box p,
+.join-box span{
+
+    max-width:100%;
+
+}
+
+
+
+.join-button{
+
+    max-width:100%;
+
+    width:auto;
+
+    font-size:12px;
+
+    padding:15px 20px;
+
+    white-space:normal;
+
+    text-align:center;
+
+}
+
+
+
+
+
+img{
+
+    max-width:100%;
+
+    height:auto;
+
+}
 
 
 
 }
+
+
+
