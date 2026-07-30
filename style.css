@@ -732,4 +732,140 @@ text-align:center;
 }
 
 
+/* ARTICLE EDITORIAL DESIGN */
+
+
+.article-page{
+
+    padding-top:170px;
+
+}
+
+
+
+#article-category{
+
+    color:#39ff88;
+
+    letter-spacing:6px;
+
+    font-size:12px;
+
+}
+
+
+
+#article-title{
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    text-align:center;
+
+}
+
+
+
+.article-info{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:25px;
+
+    color:#777;
+
+    margin-bottom:50px;
+
+}
+
+
+
+.article-main-image{
+
+    height:650px;
+
+    object-fit:cover;
+
+    border-radius:35px;
+
+}
+
+
+
+.article-content{
+
+    margin-top:80px;
+
+}
+
+
+
+.article-content h2{
+
+    font-size:45px;
+
+    line-height:1.1;
+
+    margin-top:70px;
+
+    color:white;
+
+}
+
+
+
+.article-content p{
+
+    font-size:20px;
+
+    color:#c7c7c7;
+
+    line-height:2;
+
+}
+
+
+
+.article-content p:first-letter{
+
+    font-size:60px;
+
+    font-weight:900;
+
+    color:#39ff88;
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+.article-main-image{
+
+    height:350px;
+
+}
+
+
+
+.article-content h2{
+
+    font-size:30px;
+
+}
+
+
+
+.article-content p{
+
+    font-size:17px;
+
+}
+
+
 }
