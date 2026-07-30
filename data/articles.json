@@ -1,50 +1,8 @@
-[
-  {
-    "id": 1,
-    "category": "FASHION",
-    "title": "Prvý článok",
-    "image": "image1.PNG",
-    "short": "Prvý testovací článok",
-    "content": "Text prvého článku."
-  },
-  {
-    "id": 2,
-    "category": "LIFESTYLE",
-    "title": "MOVE YOUR BODY",
-    "image": "image2.jpg",
-    "short": "Trendy športových aktivít, ktoré ovládli rok 2026",
-    "content": ""
-  },
 {
-  "id": 3,
+  "id": 1,
   "category": "LIFESTYLE",
   "title": "Aktívny životný štýl",
-  "image": "images/3.jpg",
-  "short": "Šport, pohyb a návyky, ktoré formujú dnešnú generáciu.",
-  "content": "Aktívny životný štýl sa stal súčasťou života a spôsobom, ako si vyčistiť hlavu, byť súčasťou komunity a cítiť sa dobre vo vlastnom tele.\n\nGym, pilates, crossfit, tenis či cyklistika dnes formujú nielen naše zdravie, každodenné návyky a spôsob, akým trávime voľný čas.\n\nKaždou dekádou človek stráca približne 8% kostrového svalstva, ak sa aktívne nehýbe alebo nešportuje. Šport a aktívny život sú preto nevyhnutné pre udržanie dlhovekosti.\n\nAké športy udávajú trendy v roku 2026 a prečo ich milujú milióny ľudí po celom svete?\n\nVybrali sme tie, ktoré dnes hýbu nielen telom, ale aj celou lifestyle scénou."
-},
-  {
-    "id": 4,
-    "category": "FASHION",
-    "title": "Prvý článok",
-    "image": "images4.PNG",
-    "short": "Prvý testovací článok",
-    "content": "Text prvého článku."
-  },
-  {
-    "id": 5,
-    "category": "STREET",
-    "title": "Druhý článok",
-    "image": "images5.PNG",
-    "short": "Druhý testovací článok",
-    "content": "Text druhého článku."
-  },
-  {
-    "id": 6,
-    "category": "LIFESTYLE",
-    "title": "Tretí článok",
-    "image": "images6.PNG",
-    "short": "Tretí testovací článok",
-    "content": "Text tretieho článku."
-  }
-]
+  "image": "image2.jpg",
+  "short": "Šport a pohyb formujú dnešnú generáciu.",
+  "content": "Aktívny životný štýl sa stal súčasťou života.\n\nGym, pilates, crossfit, tenis či cyklistika dnes formujú naše zdravie a každodenné návyky.\n\nŠport je dôležitý pre zdravý a kvalitný život."
+}
