@@ -11,7 +11,7 @@
     "id": 2,
     "category": "STREET",
     "title": "Druhý článok",
-    "image": "images/2.jpg",
+    "image": "images2.PNG",
     "short": "Druhý testovací článok",
     "content": "Text druhého článku."
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "category": "LIFESTYLE",
     "title": "Tretí článok",
-    "image": "images/3.jpg",
+    "image": "images3.PNG",
     "short": "Tretí testovací článok",
     "content": "Text tretieho článku."
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "category": "FASHION",
     "title": "Prvý článok",
-    "image": "images/1.jpg",
+    "image": "images4.PNG",
     "short": "Prvý testovací článok",
     "content": "Text prvého článku."
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "category": "STREET",
     "title": "Druhý článok",
-    "image": "images/2.jpg",
+    "image": "images5.PNG",
     "short": "Druhý testovací článok",
     "content": "Text druhého článku."
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "category": "LIFESTYLE",
     "title": "Tretí článok",
-    "image": "images/3.jpg",
+    "image": "images6.PNG",
     "short": "Tretí testovací článok",
     "content": "Text tretieho článku."
   }
