@@ -10,8 +10,5 @@
   
   
   
-  { "id":2, "category":"STREET", "title":"test", "image":"https://ibb.co/4Rh7zF6d", "short":"toto je ono.", "content":"Toto je celý článok. Sem napisem vsetok tex ktory sa zobrazí po otvorení článku."}
-[
-
-
-
+  { "id":2, "category":"STREET", "title":"test", "image":"", "short":"toto je ono.", "content":"Toto je celý článok. Sem napisem vsetok tex ktory sa zobrazí po otvorení článku."}
+]
