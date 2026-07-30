@@ -1172,6 +1172,156 @@ img{
 
 
 
+.article-page{
+
+padding:160px 7% 80px;
+
+max-width:1100px;
+
+margin:auto;
+
+}
+
+
+
+.article-header{
+
+text-align:center;
+
+margin-bottom:60px;
+
+}
+
+
+
+#article-category{
+
+color:#35ff88;
+
+letter-spacing:5px;
+
+font-size:12px;
+
+}
+
+
+
+#article-title{
+
+font-family:'Space Grotesk';
+
+font-size:clamp(45px,7vw,90px);
+
+line-height:.95;
+
+margin:25px 0;
+
+}
+
+
+
+.article-info{
+
+display:flex;
+
+justify-content:center;
+
+gap:25px;
+
+color:#888;
+
+}
+
+
+
+.article-main-image{
+
+width:100%;
+
+max-height:600px;
+
+object-fit:cover;
+
+border-radius:30px;
+
+margin-bottom:60px;
+
+}
+
+
+
+.article-content{
+
+max-width:750px;
+
+margin:auto;
+
+}
+
+
+
+.article-content h2{
+
+font-family:'Space Grotesk';
+
+font-size:38px;
+
+margin:50px 0 20px;
+
+}
+
+
+
+.article-content p{
+
+color:#ccc;
+
+font-size:18px;
+
+line-height:1.9;
+
+margin-bottom:30px;
+
+}
+
+
+
+
+
+@media(max-width:700px){
+
+
+.article-page{
+
+padding:120px 5% 60px;
+
+}
+
+
+
+#article-title{
+
+font-size:45px;
+
+}
+
+
+
+.article-info{
+
+flex-wrap:wrap;
+
+}
+
+
+
+.article-content h2{
+
+font-size:28px;
+
+}
+
+
 }
 
 
