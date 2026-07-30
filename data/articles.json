@@ -12,3 +12,15 @@
   
   { "id":2, "category":"STREET", "title":"test", "image":"", "short":"toto je ono.", "content":"Toto je celý článok. Sem napisem vsetok tex ktory sa zobrazí po otvorení článku."}
 ]
+
+
+[
+  {
+    "id": 2,
+    "category": "FASHION",
+    "title": "Streetwear nová generácia",
+    "image": "https://images.unsplash.com/photo-1523398002811-999ca8dec234",
+    "short": "Ako ulica zmenila svet modernej módy.",
+    "content": "Streetwear už dávno nie je iba oblečenie z ulíc. Dnes ovplyvňuje celý módny priemysel."
+  },
+  
