@@ -13,16 +13,16 @@
     "title": "MOVE YOUR BODY",
     "image": "image2.jpg",
     "short": "Trendy športových aktivít, ktoré ovládli rok 2026",
-    "content": "Ta ty si"
+    "content": ""
   },
-  {
-    "id": 3,
-    "category": "LIFESTYLE",
-    "title": "Tretí článok",
-    "image": "images3.PNG",
-    "short": "Tretí testovací článok",
-    "content": "Text tretieho článku."
-  },
+{
+  "id": 3,
+  "category": "LIFESTYLE",
+  "title": "Aktívny životný štýl",
+  "image": "images/3.jpg",
+  "short": "Šport, pohyb a návyky, ktoré formujú dnešnú generáciu.",
+  "content": "Aktívny životný štýl sa stal súčasťou života a spôsobom, ako si vyčistiť hlavu, byť súčasťou komunity a cítiť sa dobre vo vlastnom tele.\n\nGym, pilates, crossfit, tenis či cyklistika dnes formujú nielen naše zdravie, každodenné návyky a spôsob, akým trávime voľný čas.\n\nKaždou dekádou človek stráca približne 8% kostrového svalstva, ak sa aktívne nehýbe alebo nešportuje. Šport a aktívny život sú preto nevyhnutné pre udržanie dlhovekosti.\n\nAké športy udávajú trendy v roku 2026 a prečo ich milujú milióny ľudí po celom svete?\n\nVybrali sme tie, ktoré dnes hýbu nielen telom, ale aj celou lifestyle scénou."
+},
   {
     "id": 4,
     "category": "FASHION",
