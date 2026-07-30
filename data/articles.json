@@ -1,49 +1,26 @@
-{
-  "id": 1,
-  "category": "LIFESTYLE",
-  "title": "Aktívny životný štýl",
-  "short": "Šport, pohyb a návyky, ktoré formujú dnešnú generáciu.",
-  "image": "images/image2.jpg",
-  "author": "NEWCAPTURE",
-  "date": "2026",
-  "readTime": "3 min čítania",
+[
+  {
+    "id": 1,
+    "category": "LIFESTYLE",
+    "title": "Aktívny životný štýl",
+    "short": "Šport, pohyb a návyky, ktoré formujú dnešnú generáciu.",
+    "image": "images/image2.jpg",
 
-  "content": [
+    "sections": [
+      {
+        "heading": "Pohyb ako súčasť modernej generácie",
+        "text": "Gym, pilates, crossfit, tenis či cyklistika dnes formujú nielen naše zdravie, každodenné návyky a spôsob, akým trávime voľný čas."
+      },
 
-    {
-      "type": "text",
-      "value": "Aktívny životný štýl sa stal súčasťou života a spôsobom, ako si vyčistiť hlavu, byť súčasťou komunity a cítiť sa dobre vo vlastnom tele."
-    },
+      {
+        "heading": "Prečo je aktívny život dôležitý?",
+        "text": "Každou dekádou človek stráca približne 8 % kostrového svalstva, ak sa aktívne nehýbe alebo nešportuje. Šport a aktívny život sú preto nevyhnutné pre udržanie dlhovekosti."
+      },
 
-    {
-      "type": "heading",
-      "value": "Pohyb ako súčasť modernej generácie"
-    },
-
-    {
-      "type": "text",
-      "value": "Gym, pilates, crossfit, tenis či cyklistika dnes formujú nielen naše zdravie, každodenné návyky a spôsob, akým trávime voľný čas."
-    },
-
-    {
-      "type": "heading",
-      "value": "Prečo je aktívny život dôležitý?"
-    },
-
-    {
-      "type": "text",
-      "value": "Každou dekádou človek stráca približne 8 % kostrového svalstva, ak sa aktívne nehýbe alebo nešportuje. Šport a aktívny život sú preto nevyhnutné pre udržanie dlhovekosti."
-    },
-
-    {
-      "type": "heading",
-      "value": "Športové trendy roku 2026"
-    },
-
-    {
-      "type": "text",
-      "value": "Aké športy udávajú trendy v roku 2026 a prečo ich milujú milióny ľudí po celom svete? Vybrali sme tie, ktoré dnes hýbu nielen telom, ale aj celou lifestyle scénou."
-    }
-
-  ]
-}
+      {
+        "heading": "Športové trendy roku 2026",
+        "text": "Aké športy udávajú trendy v roku 2026 a prečo ich milujú milióny ľudí po celom svete? Vybrali sme tie, ktoré dnes hýbu nielen telom, ale aj celou lifestyle scénou."
+      }
+    ]
+  }
+]
