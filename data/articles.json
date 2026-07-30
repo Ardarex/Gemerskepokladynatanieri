@@ -2,17 +2,25 @@
   {
     "id": 1,
     "category": "FASHION",
-    "title": "Streetwear nová generácia",
-    "image": "https://images.unsplash.com/photo-1523398002811-999ca8dec234",
-    "short": "Ako ulica zmenila svet modernej módy.",
-    "content": "Streetwear už dávno nie je iba oblečenie z ulíc. Dnes ovplyvňuje celý módny priemysel."
+    "title": "Prvý článok",
+    "image": "images/1.jpg",
+    "short": "Prvý testovací článok",
+    "content": "Text prvého článku."
   },
   {
     "id": 2,
-    "category": "FASHION",
-    "title": "Streetwear nová generácia",
-    "image": "https://images.unsplash.com/photo-1523398002811-999ca8dec234",
-    "short": "Ako ulica zmenila svet modernej módy.",
-    "content": "Streetwear už dávno nie je iba oblečenie z ulíc. Dnes ovplyvňuje celý módny priemysel."
+    "category": "STREET",
+    "title": "Druhý článok",
+    "image": "images/2.jpg",
+    "short": "Druhý testovací článok",
+    "content": "Text druhého článku."
   },
-  
+  {
+    "id": 3,
+    "category": "LIFESTYLE",
+    "title": "Tretí článok",
+    "image": "images/3.jpg",
+    "short": "Tretí testovací článok",
+    "content": "Text tretieho článku."
+  }
+]
