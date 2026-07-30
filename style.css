@@ -1,0 +1,108 @@
+img{
+    max-width:100%;
+    height:auto;
+    display:block;
+}
+
+
+/* rýchlejší hero efekt */
+
+.hero-bg{
+
+    filter:blur(80px);
+
+    opacity:.06;
+
+    transform:translateZ(0);
+
+}
+
+
+
+/* menej náročné animácie */
+
+.card,
+.main-button,
+.join-button{
+
+    will-change:transform;
+
+}
+
+
+
+/* hladší scroll */
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+/* optimalizácia kariet */
+
+.card{
+
+    transform:translateZ(0);
+
+    box-shadow:none;
+
+}
+
+
+
+.card:hover{
+
+    box-shadow:0 15px 40px rgba(0,0,0,.35);
+
+}
+
+
+
+/* obrázky článkov */
+
+.card img,
+.article-main-image{
+
+    image-rendering:auto;
+
+    object-fit:cover;
+
+}
+
+
+
+/* navbar rýchlejší */
+
+.navbar{
+
+    backdrop-filter:blur(8px);
+
+    background:rgba(5,5,5,.85);
+
+}
+
+
+
+/* mobil výkon */
+
+@media(max-width:700px){
+
+
+.hero-bg{
+
+    display:none;
+
+}
+
+
+.card:hover{
+
+    transform:none;
+
+}
+
+
+}
